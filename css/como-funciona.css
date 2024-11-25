@@ -63,13 +63,6 @@ nav {
   gap: 2rem;
 }
 
-@media (max-width: 768px) {
-  .nav-links {
-    gap: 1.5rem;
-    margin-top: 10px;
-  }
-}
-
 .link a {
   position: relative;
   padding-bottom: 0.75rem;
@@ -136,12 +129,6 @@ nav {
   transition: transform 0.3s ease;
 }
 
-@media (max-width: 768px) {
-  .card {
-    width: 80%;
-  }
-}
-
 .card:hover {
   transform: translateY(-10px);
 }
@@ -182,7 +169,7 @@ nav {
 
 .card img {
   align-items: center;
-  width: 280px;
+  width: 340px;
 }
 
 #logo {
@@ -339,18 +326,4 @@ footer p {
 
 footer img {
   width: 100px;
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  .form-container {
-    width: 95%; /* Ajustar a largura em telas menores */
-  }
-
-  .whatsapp-btn {
-    width: 100%; /* Ajustar a largura do botão no mobile */
-  }
 }
