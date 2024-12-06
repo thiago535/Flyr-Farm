@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  font-family: "Poppins", sans-serif;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  background-color: #3b4d61;
+  font-size: 1rem; /* Base size */
+}
+
+a {
+  font-size: 1rem;
+  color: #fff;
+}
+
+nav {
+  background-color: #1e344a;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+#link-selecionado a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 2.5px;
+  width: 100%;
+  left: 0;
+  background-color: #309df1;
+  transform: scaleX(1);
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-right: 80px;
+}
+
+.link a {
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.link a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 2.5px;
+  width: 100%;
+  left: 0;
+  background-color: #309df1;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+}
+
+.link a:hover::after {
+  transform: scale(1);
+}
+
+#img {
+  margin-left: 80px;
+  width: 140px;
+}
+
+#back {
+  z-index: -2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+  position: fixed;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2.5em; /* Responsive size */
+  font-weight: 500;
+  justify-content: center;
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+}
+
+#fly-farm-color::selection {
+  background-color: #1e344a;
+  color: #fff;
+}
+
+p {
+  color: #fff;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+#caixa-texto {
+  padding: 2rem;
+  margin: 2rem;
+}
+
+#fly-farm-color {
+  color: #3ced42;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+#drone-info {
+  background-color: #f5deb3;
+  padding: 10px;
+  text-align: center;
+  margin: 2rem 1rem;
+  transition: ease-in-out 0.3s;
+  border-radius: 6px;
+}
+
+#drone-1 {
+  border-radius: 8px;
+  box-shadow: #22222229 10px 10px 10px;
+  width: 60%;
+}
+
+#info-final {
+  text-align: center;
+}
+
+button a {
+  color: #f2f2f2;
+  background-color: #2f6199;
+  padding: 10px;
+  margin: 1rem 1rem;
+  border-radius: 6px;
+  transition: ease 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button a:hover {
+  background-color: #09305e;
+}
+
+#botao-final {
+  background-color: transparent;
+}
+
+#final {
+  background-color: #37a8ea8d;
+  margin: 0 30rem 3rem 30rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#section-column {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  padding: 1rem;
+  text-align: center;
+}
+
+#drone-info:hover {
+  background-color: #f9bf53;
+}
+
+#meio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+  position: relative;
+  width: 100%; /* Full width for responsiveness */
+  height: auto; /* Responsive height */
+  max-width: 800px; /* Max width for larger screens */
+  margin-bottom: 2rem;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.image-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #444;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: #bdbdbd;
+  flex-direction: column;
+}
+
+footer p {
+  font-size: 14px;
+  margin: 12px 0 0 0;
+}
+
+footer img {
+  width: 100px;
+}
